@@ -1,0 +1,513 @@
+/* header */
+
+.img_container {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.img_container img {
+    width: auto;  
+    height: 15rem;
+    padding: 1rem;
+    border: solid 4px #1A6FBF;
+    border-radius: 8rem; 
+}
+.img_container p {
+    font-size: 1.6rem;
+    margin-top: 10px;
+    color:white; 
+}
+
+@media (max-width: 450px){
+    .img_container img {
+        width: auto;  
+        height: 7.1rem; 
+        border: solid 2px white;  
+        border-radius: 4rem;  
+    }
+
+    .img_container p {
+        font-size: 1rem;  
+    }
+}
+
+/* main */
+
+@font-face {
+    font-family: NTBrickSans;
+    src: url(../fonts/NTBrickSans.otf);
+}
+
+.pacman_blue{
+    position: absolute;
+    left: 10rem;
+    display: flex;
+    width: 120px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+}
+
+.card_margin{
+    margin-top: 20px;  
+}
+
+@media (max-width: 450px){
+    .pacman_blue{
+        width: 80px;
+        left: 16rem;
+        width: 60px;
+    }
+}
+
+
+h1{
+    font-family: NTBrickSans;
+    color: white;
+    font-size: 4rem;
+    margin: 4rem;
+    position: relative;
+}
+
+h2{
+    font-family: NTBrickSans;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    margin: 3rem;
+}
+
+.heart{
+    font-size: 30px;
+}
+
+@media (max-width: 450px){
+    h1{
+        font-size: 2rem;  
+        margin: 3rem;  
+    }
+
+    h2{
+        font-size: 1.5rem;  
+        margin: 2rem;  
+    }
+
+    .heart {
+        font-size: 20px;  
+    }
+}
+
+/* entregas */
+
+#ctt_img{
+    width: 20rem;
+    border-radius: 2rem;
+}
+#pay_img{
+    width: 30rem;
+    margin-top: 20px;
+}
+
+@media (max-width: 450px){
+    #ctt_img{
+        width: 12rem;  
+    }
+
+    #pay_img{
+        width: 18rem;  
+    }
+}
+
+/* FAQ */
+
+.faq div, .about_us div, .troca_devolucao div{
+    text-align: left;
+    margin-bottom: 3rem;
+    border: solid  #1A6FBF 3px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.527);
+    padding: 20px;
+}
+
+/* peças */
+
+.card-img-top {
+    height: 300px;
+    padding: 20px;
+    object-fit: cover;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-body {
+    flex-grow: 1;
+  }
+  
+  .card-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+
+  @media (max-width: 450px){
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
+  }
+
+/* sobre HyperTechPC */
+
+.about_us div p, .troca_devolucao div p{
+    text-indent: 50px;
+}
+
+.social_media p a{
+    color: #ffc400;
+}
+
+/* atendimento */
+
+.h2_sup{
+    margin-top: 100px;
+}
+
+.atendimento div{
+    margin-bottom: 3rem;
+    border: solid white 1px;
+    border-radius: .5rem;
+    background-color: rgba(0, 0, 0, 0.527);
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.mais_info_email, .mais_info_tel, .mais_info_presen, .comeceComprar{
+    background-color: #ffc400;
+    border-radius: .5rem;
+    border: none;
+    padding: .5rem;
+    margin: .5rem;
+    font-size: 1.2rem;
+}
+
+dialog::backdrop{
+    background-color: #000000ce;
+}
+
+dialog {
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 0 0 .5em rgba(255, 255, 255, 0.4);
+}
+
+.dialog p{
+    margin-top: 2rem;
+}
+.atend_email form {
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+.atend_email form label {
+    margin: 10px 0 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.atend_email form input[type="text"], input[type="email"], select, textarea {
+    width: 100%;
+    padding: .6rem;
+    margin-bottom: .5rem;
+    border: 1px solid #cccccc;
+    border-radius: .3rem;
+}
+
+.atend_email form textarea {
+    resize: vertical;
+    height: 7rem;
+}
+
+.atend_email form button[type="submit"] {
+    background-color: #d1d1d1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: .3rem;
+}
+
+.atend_email form button[type="submit"]:hover {
+    background-color: #1111BA;
+    color: #ffffff;
+}
+
+.buttonCloseEmail, .buttonCloseTel, .buttonClosePresen{
+    border: none;
+    border-radius: .3rem;
+    background-color:rgba(0, 0, 0, 0.616);
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 450px){
+    .img_atend img{
+        width: 12rem;  
+    }
+
+    .h2_sup{
+        margin-top: 50px;  
+    }
+}
+
+/* politica de devolução e troca */
+
+.troca_devolucao div h3, .faq div h3{
+    text-align: center;
+    color:  #ffc400;
+}
+
+/* ----------------------------- login e registro -------------------------------- */
+
+
+.main_login {
+    padding: 2rem;
+    color: white;
+}
+
+
+.col_login, .col_checkout {
+    padding: 3rem;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+
+.col_login h3, .row_carrinho h3, .col_checkout h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffc400;
+}
+
+
+.col_login img, .col_checkout img {
+    display: block;
+    margin: 0 auto 1.5rem;
+    width: 16rem;
+    height: auto;
+}
+
+.texto{
+    font-size: 1.5rem;
+}
+
+.col_login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col_login form input, .col_checkout form input {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.col_login form button, .col_checkout form button {
+    padding: 0.7rem 1.5rem;
+    width: 400px;
+    max-width: 100%;
+    background-color: #ffc400;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.col_login form button:hover {
+    background-color: #d3a900;
+}
+
+.col_login form p {
+    margin-top: 1rem;
+}
+
+.col_login form p a, .col_checkout form p a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.col_login form p a:hover {
+    color: #d3a900;
+}
+
+.row_login, .row_carrinho{
+    border: dotted 6px  white;
+    border-radius: 20px;
+}
+
+.text_buttom_register{
+    text-align: left; 
+    max-width: 400px;
+}
+
+.margin_top_checkout{
+    margin-top: 2rem;
+}
+
+@media (max-width: 450px) {
+    .main_login .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .col_login {
+        flex: 1;
+        max-width: 100%; 
+        margin-top: 0rem;
+    }
+
+    .col_login img {
+        width: 12rem;
+        height: auto;
+        margin-bottom: 0rem;
+        margin-top: 3rem;
+    }
+
+    .texto{
+        font-size: 1.2rem;  
+    }
+
+    #campoObrigatorio{
+        text-align: left; 
+    }
+
+    .margin_top_checkout{
+        margin-top: 0rem;
+    }
+}
+
+/* -------------------- pagina do admin -------------------- */
+
+.container_admin{
+    border: solid 4px #1A6FBF;  
+    border-radius: 10px;
+    
+}
+
+#img_pac_pag{
+    width: 20rem;
+    margin: 2rem;
+}
+
+.table_padding tr, .table_padding td{
+  border: 1px solid white;
+  padding: 0.3rem;
+}
+
+.table_padding th{
+  padding: 0.5rem;
+}
+
+.container_editar{
+    background-color: #2c2c2c8a; 
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 50rem;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.container_editar label {
+    display: block;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 17px;
+    color: #ffcc00; 
+}
+
+.container_editar input[type="text"], .container_editar select {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.container_editar input[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1A6FBF;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container_editar a {
+    margin-top: 20px;
+    color: #f39c12;
+    text-decoration: none;
+}
+
+@media (max-width: 450px) {
+  .table_padding tr, .table_padding td, .table_padding th {
+    font-size: 0.6rem;
+    padding: 0.2rem;
+  }
+
+  .table_padding {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  h2, h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  #img_pac_pag {
+    width: 100%;
+    max-width: 300px; 
+    margin: 0 auto;
+    display: block;
+  }
+
+  .table_padding td:nth-child(1), 
+  .table_padding th:nth-child(1) {
+    display: none;
+  }
+
+  #img_pac_pag{
+    width: 15rem;
+  }
+
+  .container_editar{
+    margin-top: 7rem;
+  }
+}
+
+
+/* carrinho */
+
+.comeceComprar a {
+    text-decoration: none;
+    color: black;
+}
+

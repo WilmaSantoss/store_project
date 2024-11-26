@@ -1,0 +1,15 @@
+Usei o xampp
+
+Base de dados
+
+User: root
+password: root
+
+
+utilizadores: 
+
+admin - janedoe@admin.com 
+password: 12345
+
+utilizadores - wilmasantos@gmail.com
+password: 123456
